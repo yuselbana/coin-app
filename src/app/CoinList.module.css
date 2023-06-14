@@ -1,0 +1,91 @@
+
+.span  {
+    display: flex;
+    align-items: center;
+gap: 1rem;
+
+}
+.coin_row h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 1px;
+    
+}
+
+
+.coin_row {
+    border-top: 1px solid white;
+   display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+   width: 75vw;
+
+
+}
+
+.coin_row span {
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    height: fit-content;
+}
+
+.title {
+    display: grid;
+    padding: 0.8rem;
+    letter-spacing: 1.2px;
+}
+
+@media screen and (width>=1200px) {
+   
+    .title {
+     grid-template-columns: repeat(4,1fr);
+     width: 75vw;
+     place-items: center;
+    }
+    .coin_row{
+        padding: 0.8rem;
+    }
+    
+}
+@media screen and (width<=1200px) {
+ 
+    
+    .title {
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    width: 75vw;
+    place-items: center;
+    }
+    .coin_row{
+        padding: 0.8rem;
+    }
+    
+    
+}
+@media screen and (width<=800px) {
+    
+    .coin_row {
+      border: none;
+        grid-auto-columns: 45%;
+        gap: 2rem;
+        padding: 1rem;
+    }
+   
+    .title {
+     
+        grid-auto-flow: column;
+        grid-auto-columns: 45%;
+        padding: 1rem;
+        gap: 2rem;
+        text-align: center;
+    }
+    .list_container {
+        overflow-x: auto;
+          overscroll-behavior-inline: contain;
+          }
+    
+    
+}
+
+
