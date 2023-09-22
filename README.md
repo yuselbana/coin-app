@@ -1,3 +1,3 @@
 Track digital currencies with live data, revalidating every 5 seconds. 
 
-Website Design inspired by https://stefantopalovicdev.vercel.app/
+Website Design cloned/inspired by https://stefantopalovicdev.vercel.app/
